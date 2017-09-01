@@ -1,7 +1,7 @@
 <%= form_with(model: [@contact, Givemealert.new], remote: true) do |form| %>
   Your alert:<br>
   <%= form.datetime_select :sendtodate %><br>
-  <%= form.text_field :sendtowho %><br>
+  <%= form.text_field :sendtowho, :value => @current_user.email %><br>
   <%= form.submit %>
 <% end %>
 
