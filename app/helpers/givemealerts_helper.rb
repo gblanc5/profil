@@ -1,0 +1,2 @@
+module GivemealertsHelper
+end
