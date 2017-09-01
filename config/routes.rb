@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  
+  root to: redirect('/contacts')
+
+  #get 'sessions/new'
+  resources :users, only: %i[new create]
+  resource :session, only: %i[new create destroy]
+
   resources :contacts do
     resources :givemealerts
   end
