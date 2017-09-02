@@ -63,11 +63,11 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
-    port:                 587,
-    domain:               'gmail.com',
-    user_name:            'jeremydafflon7@gmail.com',
-    password:             'janvier2017',
+    address:              'smtp.sendgrid.net',
+    port:                 465,
+    domain:               'sendgrid.com',
+    user_name:            'apikey',
+    password:             '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',
     authentication:       'plain',
     enable_starttls_auto: true  }
 
